@@ -2,8 +2,6 @@
 
 import { useParams } from "next/navigation";
 import { useTransition } from "react";
-import { useRouter, usePathname } from "@/i18n/routing";
-import { locales, localeNames, localeFlags, type Locale } from "@/i18n/config";
 import {
   Select,
   SelectContent,
@@ -11,6 +9,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { type Locale, localeFlags, localeNames, locales } from "@/i18n/config";
+import { usePathname, useRouter } from "@/i18n/routing";
 
 export function LanguageSelector() {
   const router = useRouter();

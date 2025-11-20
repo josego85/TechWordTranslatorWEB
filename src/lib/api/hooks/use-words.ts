@@ -1,14 +1,13 @@
 "use client";
 
-import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import {
-  getWords,
-  getWord,
   createWord,
-  updateWord,
   deleteWord,
+  getWord,
+  getWords,
+  updateWord,
 } from "../words";
-import type { Word, WordWithTranslations, PaginatedResponse } from "@/types";
 
 // Query keys
 export const wordKeys = {

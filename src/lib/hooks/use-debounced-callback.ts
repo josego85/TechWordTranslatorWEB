@@ -1,5 +1,6 @@
 import { useCallback, useRef } from "react";
 
+// biome-ignore lint/suspicious/noExplicitAny: Generic function arguments need any
 export function useDebouncedCallback<T extends (...args: any[]) => any>(
   callback: T,
   delay: number,

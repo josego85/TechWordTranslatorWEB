@@ -1,5 +1,5 @@
+import type { PaginatedResponse, Word, WordWithTranslations } from "@/types";
 import { apiClient } from "./client";
-import type { Word, WordWithTranslations, PaginatedResponse } from "@/types";
 
 /**
  * Fetch paginated list of words with translations

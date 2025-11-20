@@ -1,9 +1,9 @@
 "use client";
 
-import { useTranslations } from "next-intl";
 import { useSearchParams } from "next/navigation";
-import { useWords } from "@/lib/api/hooks/use-words";
-import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
+import { Alert, AlertDescription } from "@/components/ui/alert";
+import { Skeleton } from "@/components/ui/skeleton";
 import {
   Table,
   TableBody,
@@ -12,8 +12,8 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { Skeleton } from "@/components/ui/skeleton";
-import { Alert, AlertDescription } from "@/components/ui/alert";
+import { Link } from "@/i18n/routing";
+import { useWords } from "@/lib/api/hooks/use-words";
 import { Pagination } from "./pagination";
 
 export function WordsTable() {

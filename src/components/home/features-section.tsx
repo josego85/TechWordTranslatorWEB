@@ -1,5 +1,5 @@
+import { Globe, Lock, Zap } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { Globe, Zap, Lock } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export function FeaturesSection() {
@@ -36,10 +36,10 @@ export function FeaturesSection() {
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
-          {features.map((feature, index) => {
+          {features.map((feature) => {
             const Icon = feature.icon;
             return (
-              <Card key={index} className="border-2">
+              <Card key={feature.title} className="border-2">
                 <CardHeader>
                   <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 lg:h-14 lg:w-14 xl:h-16 xl:w-16">
                     <Icon className="h-6 w-6 text-primary lg:h-7 lg:w-7 xl:h-8 xl:w-8" />

@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-import { notFound } from "next/navigation";
+import { Navbar } from "@/components/layout/navbar";
 import { routing } from "@/i18n/routing";
 import { QueryProvider } from "@/providers/query-provider";
 import { ThemeProvider } from "@/providers/theme-provider";
-import { Navbar } from "@/components/layout/navbar";
 import "../globals.css";
 
 const geistSans = Geist({
@@ -38,6 +38,7 @@ export default async function LocaleLayout({
   const { locale } = await params;
 
   // Ensure that the incoming `locale` is valid
+  // biome-ignore lint/suspicious/noExplicitAny: Validating dynamic locale against typed tuple
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }

@@ -1,11 +1,11 @@
 "use client";
 
-import { useTranslations } from "next-intl";
 import { Search } from "lucide-react";
-import { Input } from "@/components/ui/input";
-import { useSearchParams, useRouter, usePathname } from "next/navigation";
-import { useDebouncedCallback } from "@/lib/hooks/use-debounced-callback";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { useTranslations } from "next-intl";
 import { useEffect, useRef } from "react";
+import { Input } from "@/components/ui/input";
+import { useDebouncedCallback } from "@/lib/hooks/use-debounced-callback";
 
 export function SearchBar() {
   const t = useTranslations("Words");

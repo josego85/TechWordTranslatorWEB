@@ -1,15 +1,15 @@
 "use client";
 
+import { ArrowLeft } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { useWord } from "@/lib/api/hooks/use-words";
-import { Link } from "@/i18n/routing";
+import { PageContainer } from "@/components/layout/page-container";
+import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
-import { Alert, AlertDescription } from "@/components/ui/alert";
-import { ArrowLeft } from "lucide-react";
-import { PageContainer } from "@/components/layout/page-container";
 import { CONTAINER, TYPOGRAPHY } from "@/constants/design-tokens";
+import { Link } from "@/i18n/routing";
+import { useWord } from "@/lib/api/hooks/use-words";
 import { cn } from "@/lib/utils";
 
 interface WordDetailProps {
@@ -18,7 +18,6 @@ interface WordDetailProps {
 
 export function WordDetail({ id }: WordDetailProps) {
   const t = useTranslations("Words");
-  const common = useTranslations("Common");
 
   const { data: word, isLoading, error } = useWord(id);
 

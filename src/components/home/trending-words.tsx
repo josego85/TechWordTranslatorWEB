@@ -1,12 +1,12 @@
 "use client";
 
+import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { useWords } from "@/lib/api/hooks/use-words";
+import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Link } from "@/i18n/routing";
-import { ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { useWords } from "@/lib/api/hooks/use-words";
 
 export function TrendingWords() {
   const t = useTranslations("Home");
@@ -40,6 +40,7 @@ export function TrendingWords() {
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {isLoading
             ? Array.from({ length: 6 }).map((_, i) => (
+                // biome-ignore lint/suspicious/noArrayIndexKey: Skeletons don't have unique IDs
                 <Card key={i}>
                   <CardHeader>
                     <Skeleton className="h-6 w-32" />

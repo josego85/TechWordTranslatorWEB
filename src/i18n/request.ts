@@ -6,6 +6,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
   let locale = await requestLocale;
 
   // Ensure that a valid locale is used
+  // biome-ignore lint/suspicious/noExplicitAny: Validating dynamic locale against typed tuple
   if (!locale || !routing.locales.includes(locale as any)) {
     locale = routing.defaultLocale;
   }

@@ -1,9 +1,9 @@
 "use client";
 
-import { useTranslations } from "next-intl";
-import { useSearchParams, useRouter, usePathname } from "next/navigation";
-import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { useTranslations } from "next-intl";
+import { Button } from "@/components/ui/button";
 
 interface PaginationProps {
   currentPage: number;

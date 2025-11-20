@@ -1,11 +1,13 @@
 "use client";
 
-import { useTranslations } from "next-intl";
 import { useQuery } from "@tanstack/react-query";
+import { useTranslations } from "next-intl";
 import { apiClient } from "@/lib/api/client";
+import type { PaginatedResponse, WordWithTranslations } from "@/types";
 
 async function getStats() {
-  const response = await apiClient<any>("/words?page=1");
+  const response =
+    await apiClient<PaginatedResponse<WordWithTranslations>>("/words?page=1");
   return {
     totalWords: response.meta?.total || 0,
     languages: 3,
@@ -40,8 +42,8 @@ export function StatsSection() {
   return (
     <section className="border-y border-border bg-muted/30 py-8 sm:py-12">
       <div className="mx-auto grid max-w-4xl grid-cols-1 gap-6 px-4 text-center sm:grid-cols-3 sm:gap-8 sm:px-6 lg:px-8">
-        {stats.map((stat, index) => (
-          <div key={index} className="py-2">
+        {stats.map((stat) => (
+          <div key={stat.label} className="py-2">
             <div className="text-3xl font-bold sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
               {stat.value}
               <span className="text-primary">{stat.suffix}</span>
