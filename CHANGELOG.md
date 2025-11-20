@@ -21,4 +21,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Modular design system with tokens in `/constants`.
   - Strict type safety with centralized `/types` to enforce DRY.
 - **Documentation**: Comprehensive guides in `/docs` and simplified README (SRP applied).
+- **Config**: Added `.env.example` to repository for easier setup.
 - **License**: Released under GNU GPL v3.0.
