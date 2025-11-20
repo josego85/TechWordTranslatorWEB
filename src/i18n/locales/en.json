@@ -1,0 +1,103 @@
+{
+  "Common": {
+    "appName": "Tech Word Translator",
+    "home": "Home",
+    "words": "Words",
+    "search": "Search",
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "cancel": "Cancel",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "toggleTheme": "Toggle theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "Home": {
+    "badge": "Free & Open Source",
+    "title": "Technical Terms Dictionary",
+    "subtitle": "Search and translate IT terminology across English, Spanish, and German",
+    "searchPlaceholder": "Search for a technical term...",
+    "searchButton": "Search",
+    "trySearching": "Try searching",
+    "stats": {
+      "words": "Technical Terms",
+      "languages": "Languages",
+      "free": "Free"
+    },
+    "trending": {
+      "title": "Latest Terms",
+      "subtitle": "Recently added technical terminology",
+      "viewAll": "View all"
+    },
+    "exploreAllTerms": "Explore All Terms",
+    "howItWorks": {
+      "title": "How It Works",
+      "subtitle": "Get started in three simple steps",
+      "clickToTry": "Click to try",
+      "step1": {
+        "title": "Search",
+        "description": "Enter any technical term in the search bar or browse the complete catalog"
+      },
+      "step2": {
+        "title": "Discover",
+        "description": "View instant translations in English, Spanish, and German with clear definitions"
+      },
+      "step3": {
+        "title": "Learn",
+        "description": "Understand technical terminology across languages and improve your vocabulary"
+      }
+    },
+    "features": {
+      "title": "Why use Tech Word Translator?",
+      "subtitle": "Everything you need to translate technical terms",
+      "multiLanguage": {
+        "title": "3 Languages",
+        "description": "Translate between English, Spanish, and German instantly"
+      },
+      "fastSearch": {
+        "title": "Fast Search",
+        "description": "Find the right term in milliseconds with our powerful search"
+      },
+      "openSource": {
+        "title": "Open Source",
+        "description": "100% free and open source. Contribute on GitHub"
+      }
+    }
+  },
+  "Words": {
+    "title": "Words",
+    "subtitle": "Browse and search technical terms",
+    "word": "Term",
+    "addNew": "Add New Word",
+    "english": "English",
+    "spanish": "Spanish",
+    "german": "German",
+    "noResults": "No words found",
+    "error": "Error loading words",
+    "searchPlaceholder": "Search for a term...",
+    "showing": "Showing",
+    "of": "of",
+    "results": "results",
+    "page": "Page",
+    "previous": "Previous",
+    "next": "Next",
+    "backToList": "Back to list",
+    "notFound": "Word not found",
+    "wordId": "ID",
+    "noTranslation": "No translation available",
+    "metadata": "Metadata",
+    "createdAt": "Created at",
+    "updatedAt": "Updated at",
+    "viewGrid": "Grid view",
+    "viewTable": "Table view",
+    "sortBy": "Sort by",
+    "sortAlphaAsc": "A-Z",
+    "sortAlphaDesc": "Z-A",
+    "sortNewest": "Newest first",
+    "sortOldest": "Oldest first"
+  }
+}

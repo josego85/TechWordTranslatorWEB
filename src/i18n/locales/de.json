@@ -1,0 +1,103 @@
+{
+  "Common": {
+    "appName": "Technische Wörter Übersetzer",
+    "home": "Startseite",
+    "words": "Wörter",
+    "search": "Suchen",
+    "add": "Hinzufügen",
+    "edit": "Bearbeiten",
+    "delete": "Löschen",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "loading": "Laden...",
+    "error": "Ein Fehler ist aufgetreten",
+    "toggleTheme": "Design wechseln",
+    "light": "Hell",
+    "dark": "Dunkel",
+    "system": "System"
+  },
+  "Home": {
+    "badge": "Kostenlos & Open Source",
+    "title": "Wörterbuch für technische Begriffe",
+    "subtitle": "Suchen und übersetzen Sie IT-Terminologie zwischen Englisch, Spanisch und Deutsch",
+    "searchPlaceholder": "Suchen Sie nach einem technischen Begriff...",
+    "searchButton": "Suchen",
+    "trySearching": "Versuchen Sie zu suchen",
+    "stats": {
+      "words": "Technische Begriffe",
+      "languages": "Sprachen",
+      "free": "Kostenlos"
+    },
+    "trending": {
+      "title": "Neueste Begriffe",
+      "subtitle": "Kürzlich hinzugefügte technische Terminologie",
+      "viewAll": "Alle anzeigen"
+    },
+    "exploreAllTerms": "Alle Begriffe Erkunden",
+    "howItWorks": {
+      "title": "Wie Es Funktioniert",
+      "subtitle": "Beginnen Sie in drei einfachen Schritten",
+      "clickToTry": "Klicken Sie zum Ausprobieren",
+      "step1": {
+        "title": "Suchen",
+        "description": "Geben Sie einen beliebigen technischen Begriff in die Suchleiste ein oder durchsuchen Sie den vollständigen Katalog"
+      },
+      "step2": {
+        "title": "Entdecken",
+        "description": "Sehen Sie sofortige Übersetzungen in Englisch, Spanisch und Deutsch mit klaren Definitionen"
+      },
+      "step3": {
+        "title": "Lernen",
+        "description": "Verstehen Sie technische Terminologie über Sprachen hinweg und verbessern Sie Ihr Vokabular"
+      }
+    },
+    "features": {
+      "title": "Warum Tech Word Translator verwenden?",
+      "subtitle": "Alles, was Sie zum Übersetzen technischer Begriffe benötigen",
+      "multiLanguage": {
+        "title": "3 Sprachen",
+        "description": "Übersetzen Sie sofort zwischen Englisch, Spanisch und Deutsch"
+      },
+      "fastSearch": {
+        "title": "Schnelle Suche",
+        "description": "Finden Sie den richtigen Begriff in Millisekunden mit unserer leistungsstarken Suche"
+      },
+      "openSource": {
+        "title": "Open Source",
+        "description": "100% kostenlos und Open Source. Beitragen auf GitHub"
+      }
+    }
+  },
+  "Words": {
+    "title": "Wörter",
+    "subtitle": "Durchsuchen und suchen Sie nach technischen Begriffen",
+    "word": "Begriff",
+    "addNew": "Neues Wort hinzufügen",
+    "english": "Englisch",
+    "spanish": "Spanisch",
+    "german": "Deutsch",
+    "noResults": "Keine Wörter gefunden",
+    "error": "Fehler beim Laden der Wörter",
+    "searchPlaceholder": "Nach einem Begriff suchen...",
+    "showing": "Anzeigen",
+    "of": "von",
+    "results": "Ergebnisse",
+    "page": "Seite",
+    "previous": "Zurück",
+    "next": "Weiter",
+    "backToList": "Zurück zur Liste",
+    "notFound": "Wort nicht gefunden",
+    "wordId": "ID",
+    "noTranslation": "Keine Übersetzung verfügbar",
+    "metadata": "Metadaten",
+    "createdAt": "Erstellt am",
+    "updatedAt": "Aktualisiert am",
+    "viewGrid": "Rasteransicht",
+    "viewTable": "Tabellenansicht",
+    "sortBy": "Sortieren nach",
+    "sortAlphaAsc": "A-Z",
+    "sortAlphaDesc": "Z-A",
+    "sortNewest": "Neueste zuerst",
+    "sortOldest": "Älteste zuerst"
+  }
+}

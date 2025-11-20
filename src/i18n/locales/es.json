@@ -1,0 +1,103 @@
+{
+  "Common": {
+    "appName": "Traductor de Palabras Técnicas",
+    "home": "Inicio",
+    "words": "Palabras",
+    "search": "Buscar",
+    "add": "Agregar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "loading": "Cargando...",
+    "error": "Ocurrió un error",
+    "toggleTheme": "Cambiar tema",
+    "light": "Claro",
+    "dark": "Oscuro",
+    "system": "Sistema"
+  },
+  "Home": {
+    "badge": "Gratis y Código Abierto",
+    "title": "Diccionario de Términos Técnicos",
+    "subtitle": "Busca y traduce terminología de TI entre inglés, español y alemán",
+    "searchPlaceholder": "Buscar un término técnico...",
+    "searchButton": "Buscar",
+    "trySearching": "Prueba buscar",
+    "stats": {
+      "words": "Términos Técnicos",
+      "languages": "Idiomas",
+      "free": "Gratis"
+    },
+    "trending": {
+      "title": "Últimos Términos",
+      "subtitle": "Terminología técnica agregada recientemente",
+      "viewAll": "Ver todos"
+    },
+    "exploreAllTerms": "Explorar Todos los Términos",
+    "howItWorks": {
+      "title": "Cómo Funciona",
+      "subtitle": "Comienza en tres simples pasos",
+      "clickToTry": "Haz clic para probar",
+      "step1": {
+        "title": "Buscar",
+        "description": "Ingresa cualquier término técnico en la barra de búsqueda o navega el catálogo completo"
+      },
+      "step2": {
+        "title": "Descubrir",
+        "description": "Ve traducciones instantáneas en inglés, español y alemán con definiciones claras"
+      },
+      "step3": {
+        "title": "Aprender",
+        "description": "Comprende terminología técnica entre idiomas y mejora tu vocabulario"
+      }
+    },
+    "features": {
+      "title": "¿Por qué usar Tech Word Translator?",
+      "subtitle": "Todo lo que necesitas para traducir términos técnicos",
+      "multiLanguage": {
+        "title": "3 Idiomas",
+        "description": "Traduce entre inglés, español y alemán al instante"
+      },
+      "fastSearch": {
+        "title": "Búsqueda Rápida",
+        "description": "Encuentra el término correcto en milisegundos con nuestra potente búsqueda"
+      },
+      "openSource": {
+        "title": "Código Abierto",
+        "description": "100% gratis y de código abierto. Contribuye en GitHub"
+      }
+    }
+  },
+  "Words": {
+    "title": "Palabras",
+    "subtitle": "Explora y busca términos técnicos",
+    "word": "Término",
+    "addNew": "Agregar Nueva Palabra",
+    "english": "Inglés",
+    "spanish": "Español",
+    "german": "Alemán",
+    "noResults": "No se encontraron palabras",
+    "error": "Error al cargar palabras",
+    "searchPlaceholder": "Buscar un término...",
+    "showing": "Mostrando",
+    "of": "de",
+    "results": "resultados",
+    "page": "Página",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "backToList": "Volver al listado",
+    "notFound": "Palabra no encontrada",
+    "wordId": "ID",
+    "noTranslation": "No hay traducción disponible",
+    "metadata": "Metadatos",
+    "createdAt": "Creado el",
+    "updatedAt": "Actualizado el",
+    "viewGrid": "Vista de cuadrícula",
+    "viewTable": "Vista de tabla",
+    "sortBy": "Ordenar por",
+    "sortAlphaAsc": "A-Z",
+    "sortAlphaDesc": "Z-A",
+    "sortNewest": "Más recientes",
+    "sortOldest": "Más antiguos"
+  }
+}
