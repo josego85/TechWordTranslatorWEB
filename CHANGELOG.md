@@ -5,13 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [0.1.1] - 2025-12-04
+
+### Security
+- **Critical**: Updated Next.js from 16.0.3 to 16.0.7 to fix RCE vulnerability in React flight protocol ([GHSA-9qr9-h5gf-34mp](https://github.com/advisories/GHSA-9qr9-h5gf-34mp))
 
 ### Changed
-- **Code Quality**: Comprehensive linting audit (0 errors/warnings).
-- **A11y**: Improved accessibility with proper ARIA roles for flags.
-- **Performance**: Optimized React rendering by replacing array index keys with unique IDs.
-- **Refactor**: Removed unused imports/variables and enforced strict typing (replaced `any`).
+- **Code Quality**: Comprehensive linting audit (0 errors/warnings)
+- **A11y**: Improved accessibility with proper ARIA roles for flags
+- **Performance**: Optimized React rendering by replacing array index keys with unique IDs
+- **Type Safety**: Enhanced word types with documentation and helper functions
+  - Added API response structure comments after database normalization
+  - Added ISO 639-1 language code documentation
+  - Implemented `hasTranslations()` type guard for safer type narrowing
+  - Implemented `getTranslationByLanguage()` helper for language-specific lookups
+- **Refactor**: Removed unused imports/variables and enforced strict typing (replaced `any`)
 
 ## [0.1.0] - 2025-11-20
 
