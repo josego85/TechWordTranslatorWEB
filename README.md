@@ -2,6 +2,29 @@
 
 A modern, multilingual technical dictionary web application built with Next.js 16 and React 19.
 
+## Preview
+
+<div align="center">
+  <img src="docs/screenshots/desktop/01-home-hero-light.png" alt="Tech Word Translator - Home" width="100%">
+</div>
+
+<br/>
+
+<p align="center">
+  <img src="docs/screenshots/desktop/05-words-grid-view.png" alt="Words Grid View" width="49%" style="display: inline-block; margin-right: 1%;">
+  <img src="docs/screenshots/desktop/08-word-detail-dark.png" alt="Word Detail - Dark Mode" width="49%" style="display: inline-block;">
+</p>
+
+<br/>
+
+<p align="center">
+  <i>🌍 Available in English, Spanish, and German • 🌙 Full Dark Mode Support</i>
+</p>
+
+<p align="center">
+  <a href="docs/screenshots/README.md">📸 View all screenshots →</a>
+</p>
+
 ## Features
 
 - 🌍 **Multilingual**: Support for English, Spanish, and German.
