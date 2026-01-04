@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.1] - 2026-01-04
+
+### Security
+- **Critical**: Updated Next.js from 16.0.7 to 16.1.1 to fix high severity vulnerabilities:
+  - Next Server Actions Source Code Exposure ([GHSA-w37m-7fhw-fmv9](https://github.com/advisories/GHSA-w37m-7fhw-fmv9))
+  - Next Vulnerable to Denial of Service with Server Components ([GHSA-mwv6-3258-q52c](https://github.com/advisories/GHSA-mwv6-3258-q52c))
+
+### Changed
+- **Dependencies**: Updated package version to 0.2.1
+- **Dependencies**: Added `baseline-browser-mapping` dependency (^2.8.3) from Next.js 16.1.1
+- **Code Quality**: Improved formatting in word type guards for better readability
+
 ## [0.2.0] - 2025-12-05
 
 ### Added

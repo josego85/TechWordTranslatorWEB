@@ -29,7 +29,10 @@ export interface WordWithTranslations extends Word {
  * Type guard to check if a word has translations
  */
 export function hasTranslations(word: Word): word is WordWithTranslations {
-  return 'translations' in word && Array.isArray((word as WordWithTranslations).translations);
+  return (
+    "translations" in word &&
+    Array.isArray((word as WordWithTranslations).translations)
+  );
 }
 
 /**
@@ -37,7 +40,7 @@ export function hasTranslations(word: Word): word is WordWithTranslations {
  */
 export function getTranslationByLanguage(
   word: WordWithTranslations,
-  language: string
+  language: string,
 ): Translation | undefined {
   return word.translations.find((t) => t.language === language);
 }
