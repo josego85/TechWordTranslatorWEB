@@ -5,6 +5,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+- **CI/CD**: Complete GitHub Actions workflow suite
+  - `ci.yml`: Continuous integration (lint, format, build) on push to main and feature branches
+  - `pr.yml`: Pull request validation with lint, format, and build checks
+  - `release.yml`: Automated GitHub releases on version tags with changelog generation
+  - `security.yml`: Security scanning with npm audit and CodeQL analysis
+  - `setup.yml`: Reusable workflow for Node.js environment setup
+- **Security**: Dependabot configuration for automated dependency updates
+  - Weekly npm dependency updates (grouped by minor/patch)
+  - Weekly GitHub Actions updates
+  - Automatic PR creation with proper labels and commit prefixes
+
+---
+
 ## [0.2.1] - 2026-01-04
 
 ### Security
@@ -16,6 +32,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Dependencies**: Updated package version to 0.2.1
 - **Dependencies**: Added `baseline-browser-mapping` dependency (^2.8.3) from Next.js 16.1.1
 - **Code Quality**: Improved formatting in word type guards for better readability
+
+---
 
 ## [0.2.0] - 2025-12-05
 
@@ -35,6 +53,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Improved repository presentation for better first impressions
 - Applied professional naming convention to all screenshot files
 
+---
+
 ## [0.1.1] - 2025-12-04
 
 ### Security
@@ -50,6 +70,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Implemented `hasTranslations()` type guard for safer type narrowing
   - Implemented `getTranslationByLanguage()` helper for language-specific lookups
 - **Refactor**: Removed unused imports/variables and enforced strict typing (replaced `any`)
+
+---
 
 ## [0.1.0] - 2025-11-20
 
