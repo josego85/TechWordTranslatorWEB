@@ -18,6 +18,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Weekly GitHub Actions updates
   - Automatic PR creation with proper labels and commit prefixes
 
+### Fixed
+- **CI/CD**: Fix Dependabot configuration by removing invalid registries section
+
 ---
 
 ## [0.2.1] - 2026-01-04
