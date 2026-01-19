@@ -9,11 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - **CI/CD**: Complete GitHub Actions workflow suite
-  - `ci.yml`: Continuous integration (lint, format, build) on push to main and feature branches
-  - `pr.yml`: Pull request validation with lint, format, and build checks
+  - `ci.yml`: Continuous integration (lint, build) on push to main and feature branches
+  - `pr.yml`: Pull request validation with lint and build checks
   - `release.yml`: Automated GitHub releases on version tags with changelog generation
   - `security.yml`: Security scanning with npm audit and CodeQL analysis
-  - `setup.yml`: Reusable workflow for Node.js environment setup
 - **Security**: Dependabot configuration for automated dependency updates
   - Weekly npm dependency updates (grouped by minor/patch)
   - Weekly GitHub Actions updates
