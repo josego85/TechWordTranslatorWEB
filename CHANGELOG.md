@@ -5,7 +5,9 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+---
+
+## [0.3.0] - 2026-02-07
 
 ### Added
 - **CI/CD**: Complete GitHub Actions workflow suite
@@ -20,6 +22,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 - **CI/CD**: Fix Dependabot configuration by removing invalid registries section
+
+### Security
+- **High**: Updated Next.js from 16.1.1 to 16.1.6 to fix high severity vulnerabilities:
+  - DoS via Image Optimizer remotePatterns configuration ([GHSA-9g9p-9gw9-jx7f](https://github.com/advisories/GHSA-9g9p-9gw9-jx7f))
+  - HTTP request deserialization can lead to DoS when using insecure React Server Components ([GHSA-h25m-26qc-wcjf](https://github.com/advisories/GHSA-h25m-26qc-wcjf))
+  - Unbounded Memory Consumption via PPR Resume Endpoint ([GHSA-5f7q-jpqc-wp7h](https://github.com/advisories/GHSA-5f7q-jpqc-wp7h))
 
 ---
 
