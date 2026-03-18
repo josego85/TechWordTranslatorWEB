@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.3.1] - 2026-03-18
+
+### Security
+- **Moderate**: Updated Next.js from 16.1.6 to 16.2.0 to fix moderate severity vulnerabilities:
+  - Null origin can bypass Server Actions CSRF checks ([GHSA-mq59-m269-xvcx](https://github.com/advisories/GHSA-mq59-m269-xvcx))
+  - Null origin can bypass dev HMR websocket CSRF checks ([GHSA-jcc7-9wpm-mj36](https://github.com/advisories/GHSA-jcc7-9wpm-mj36))
+  - HTTP request smuggling in rewrites ([GHSA-ggv3-7p47-pfv8](https://github.com/advisories/GHSA-ggv3-7p47-pfv8))
+  - Unbounded `next/image` disk cache growth can exhaust storage ([GHSA-3x4c-7xq6-9pq8](https://github.com/advisories/GHSA-3x4c-7xq6-9pq8))
+  - Unbounded postponed resume buffering can lead to DoS ([GHSA-h27x-g6w4-24gq](https://github.com/advisories/GHSA-h27x-g6w4-24gq))
+
+---
+
 ## [0.3.0] - 2026-02-07
 
 ### Added
