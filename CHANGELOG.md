@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **i18n**: Category names translated in EN, ES, and DE
 - **UI**: New `Badge` component and `CategoryBadge` component with dark mode support
 - **DX**: Pre-commit hook with husky + lint-staged — runs `biome check --write` on staged files before every commit
+- **Docs**: Added `CLAUDE.md` with architecture reference, conventions, and common pitfalls for AI-assisted development
 
 ---
 
