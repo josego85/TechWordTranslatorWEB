@@ -64,8 +64,7 @@ export const CATEGORY_CONFIG: Record<string, CategoryConfig> = {
   },
   devops: {
     icon: GitMerge,
-    color:
-      "bg-teal-100 text-teal-700 dark:bg-teal-900/30 dark:text-teal-400",
+    color: "bg-teal-100 text-teal-700 dark:bg-teal-900/30 dark:text-teal-400",
   },
   hardware: {
     icon: HardDrive,

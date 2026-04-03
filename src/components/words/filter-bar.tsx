@@ -3,7 +3,6 @@
 import { ArrowUpDown, Tag } from "lucide-react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
-import { CATEGORY_CONFIG, CATEGORY_SLUGS } from "@/constants/categories";
 import {
   Select,
   SelectContent,
@@ -11,6 +10,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { CATEGORY_CONFIG, CATEGORY_SLUGS } from "@/constants/categories";
 
 type SortOption = "alpha-asc" | "alpha-desc" | "newest" | "oldest";
 
@@ -73,7 +73,10 @@ export function FilterBar({ onSortChange }: FilterBarProps) {
         <div className="flex items-center gap-2">
           <ArrowUpDown className="h-4 w-4 shrink-0 text-muted-foreground" />
           <span className="text-sm font-medium">{t("sortBy")}:</span>
-          <Select onValueChange={(v) => onSortChange?.(v as SortOption)} defaultValue="alpha-asc">
+          <Select
+            onValueChange={(v) => onSortChange?.(v as SortOption)}
+            defaultValue="alpha-asc"
+          >
             <SelectTrigger className="w-[160px]">
               <SelectValue />
             </SelectTrigger>
