@@ -11,6 +11,7 @@ import { CONTAINER, TYPOGRAPHY } from "@/constants/design-tokens";
 import { Link } from "@/i18n/routing";
 import { useWord } from "@/lib/api/hooks/use-words";
 import { cn } from "@/lib/utils";
+import { CategoryBadge } from "./category-badge";
 
 interface WordDetailProps {
   id: number;
@@ -143,6 +144,26 @@ export function WordDetail({ id }: WordDetailProps) {
             </CardContent>
           </Card>
         </div>
+
+        {word.categories && word.categories.length > 0 && (
+          <Card>
+            <CardHeader>
+              <CardTitle>{t("categories")}</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="flex flex-wrap gap-2">
+                {word.categories.map((cat) => (
+                  <CategoryBadge
+                    key={cat.slug}
+                    slug={cat.slug}
+                    name={cat.name}
+                    className="px-3 py-1 text-sm"
+                  />
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+        )}
 
         <Card>
           <CardHeader>

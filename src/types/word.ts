@@ -21,8 +21,14 @@ export interface Translation {
   updated_at: string;
 }
 
+export interface Category {
+  slug: string;
+  name: string;
+}
+
 export interface WordWithTranslations extends Word {
   translations: Translation[];
+  categories: Category[];
 }
 
 /**

@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "@/i18n/routing";
 import type { WordWithTranslations } from "@/types";
+import { CategoryBadge } from "./category-badge";
 
 interface WordCardProps {
   word: WordWithTranslations;
@@ -44,6 +45,13 @@ export function WordCard({ word }: WordCardProps) {
               {deTranslation?.translation || "-"}
             </span>
           </div>
+          {word.categories && word.categories.length > 0 && (
+            <div className="flex flex-wrap gap-1.5 border-t pt-3">
+              {word.categories.map((cat) => (
+                <CategoryBadge key={cat.slug} slug={cat.slug} name={cat.name} />
+              ))}
+            </div>
+          )}
         </CardContent>
       </Card>
     </Link>

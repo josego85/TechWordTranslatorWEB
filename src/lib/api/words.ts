@@ -7,11 +7,11 @@ import { apiClient } from "./client";
 export const getWords = async (
   page = 1,
   search = "",
+  category = "",
 ): Promise<PaginatedResponse<WordWithTranslations>> => {
   const params = new URLSearchParams({ page: page.toString() });
-  if (search) {
-    params.append("search", search);
-  }
+  if (search) params.append("search", search);
+  if (category) params.append("category", category);
   return apiClient(`/words?${params.toString()}`);
 };
 

@@ -21,8 +21,9 @@ export function WordsTable() {
   const searchParams = useSearchParams();
   const page = Number(searchParams.get("page")) || 1;
   const search = searchParams.get("search") || "";
+  const category = searchParams.get("category") || "";
 
-  const { data, isLoading, error } = useWords(page, search);
+  const { data, isLoading, error } = useWords(page, search, category);
 
   if (isLoading) {
     return (
