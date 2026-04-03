@@ -98,6 +98,24 @@
     "sortAlphaAsc": "A-Z",
     "sortAlphaDesc": "Z-A",
     "sortNewest": "Neueste zuerst",
-    "sortOldest": "Älteste zuerst"
+    "sortOldest": "Älteste zuerst",
+    "categories": "Kategorien",
+    "filterByCategory": "Kategorie",
+    "allCategories": "Alle Kategorien",
+    "category": {
+      "networking": "Netzwerke",
+      "databases": "Datenbanken",
+      "security": "Sicherheit",
+      "algorithms": "Algorithmen",
+      "data-structures": "Datenstrukturen",
+      "operating-systems": "Betriebssysteme",
+      "programming-languages": "Programmiersprachen",
+      "web": "Web",
+      "cloud": "Cloud",
+      "devops": "DevOps",
+      "hardware": "Hardware",
+      "artificial-intelligence": "Künstliche Intelligenz",
+      "other": "Sonstiges"
+    }
   }
 }

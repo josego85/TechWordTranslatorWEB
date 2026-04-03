@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [Unreleased]
+
+### Added
+
+- **Categories**: Visual category badges on word cards and word detail page, with distinct icon and color per category (13 total)
+- **Filtering**: Category dropdown in filter bar synced to URL param `?category=` — filters via API, bookmarkable and shareable
+- **i18n**: Category names translated in EN, ES, and DE
+- **UI**: New `Badge` component and `CategoryBadge` component with dark mode support
+- **DX**: Pre-commit hook with husky + lint-staged — runs `biome check --write` on staged files before every commit
+
+---
+
 ## [0.3.1] - 2026-03-18
 
 ### Security
