@@ -18,6 +18,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **DX**: Pre-commit hook with husky + lint-staged — runs `biome check --write` on staged files before every commit
 - **Docs**: Added `CLAUDE.md` with architecture reference, conventions, and common pitfalls for AI-assisted development
 
+### Changed
+
+- **Docs**: `docs/api-integration.md` — `useWords` hook documenta los 4 parámetros (`page`, `search`, `category`, `sort`) y la regla de leerlos siempre desde URL params
+
+### Fixed
+
+- **Sort**: Sort by (A-Z / Z-A) in words list had no effect — the select called an unconnected prop callback instead of updating URL params; now synced to `?sort=` and propagated through `useWords` to the API
+
+### Removed
+
+- **Sort**: Removed "Newest first" and "Oldest first" sort options — not useful for a dictionary; `created_at` ordering has no meaningful value for end users browsing technical terms
+
 ---
 
 ## [0.3.1] - 2026-03-18

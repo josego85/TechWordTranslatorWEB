@@ -30,7 +30,7 @@ A modern, multilingual technical dictionary web application built with Next.js 1
 - 🌍 **Multilingual**: Support for English, Spanish, and German.
 - 🎨 **Modern UI**: Built with Tailwind CSS 4 and shadcn/ui.
 - ⚡ **High Performance**: Server Components, Turbopack, and React Compiler.
-- 🔍 **Advanced Search**: Real-time search and filtering.
+- 🔍 **Advanced Search**: Real-time search, category filtering, and alphabetical sorting (A→Z / Z→A).
 - 🌙 **Dark Mode**: Fully supported out of the box.
 
 ## Quick Start
