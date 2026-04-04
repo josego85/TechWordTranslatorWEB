@@ -83,7 +83,7 @@ const { data, isLoading, error } = useWords(page, search, category);
 
 Query key factory (`wordKeys`) must include every variable that changes the result:
 ```typescript
-list: (page, search, category) => [...wordKeys.lists(), page, search, category]
+list: (page, search, category, sort) => [...wordKeys.lists(), page, search, category, sort]
 ```
 
 ### Component layers
@@ -195,5 +195,5 @@ Workflows: `ci.yml` (push), `pr.yml` (PRs to main), `security.yml` (weekly audit
 - **`next/link` vs `@/i18n/routing` Link**: always use the i18n one or locale prefix is lost
 - **Biome import order fails CI**: VS Code auto-fixes on save locally — but files written by tools (AI, scripts) need `npm run format` before committing
 - **`wordKeys.list()`** must include all query variables or React Query serves stale cache
-- **Page reset on filter change**: always `params.set("page", "1")` when changing search/category
+- **Page reset on filter change**: always `params.set("page", "1")` when changing search/category/sort
 - **`staleTime: 60_000`** in QueryClient — data is fresh for 1 min, no refetch on mount during that window

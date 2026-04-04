@@ -35,12 +35,16 @@ Fetch a paginated list of words.
 ```typescript
 import { useWords } from "@/lib/api/hooks/use-words";
 
-const { data, isLoading, error } = useWords(page, search);
+const { data, isLoading, error } = useWords(page, search, category, sort);
 ```
 
 - **page**: `number` (default: 1)
-- **search**: `string` (optional)
+- **search**: `string` (optional) — searches `english_word` and all translations
+- **category**: `string` (optional) — category slug (e.g. `networking`, `security`)
+- **sort**: `string` (optional, default: `alpha-asc`) — `alpha-asc` or `alpha-desc`
 - **Returns**: `PaginatedResponse<WordWithTranslations>`
+
+All four params are included in the React Query cache key (`wordKeys.list`). Always read them from URL search params — never from local state.
 
 ### useWord
 
