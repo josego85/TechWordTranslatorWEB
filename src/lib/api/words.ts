@@ -8,10 +8,12 @@ export const getWords = async (
   page = 1,
   search = "",
   category = "",
+  sort = "",
 ): Promise<PaginatedResponse<WordWithTranslations>> => {
   const params = new URLSearchParams({ page: page.toString() });
   if (search) params.append("search", search);
   if (category) params.append("category", category);
+  if (sort) params.append("sort", sort);
   return apiClient(`/words?${params.toString()}`);
 };
 

@@ -14,8 +14,9 @@ export function WordsGrid() {
   const page = Number(searchParams.get("page")) || 1;
   const search = searchParams.get("search") || "";
   const category = searchParams.get("category") || "";
+  const sort = searchParams.get("sort") || "alpha-asc";
 
-  const { data, isLoading, error } = useWords(page, search, category);
+  const { data, isLoading, error } = useWords(page, search, category, sort);
 
   if (isLoading) {
     return (

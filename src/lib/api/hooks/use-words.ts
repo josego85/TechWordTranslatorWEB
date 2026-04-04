@@ -13,17 +13,17 @@ import {
 export const wordKeys = {
   all: ["words"] as const,
   lists: () => [...wordKeys.all, "list"] as const,
-  list: (page: number, search?: string, category?: string) =>
-    [...wordKeys.lists(), page, search, category] as const,
+  list: (page: number, search?: string, category?: string, sort?: string) =>
+    [...wordKeys.lists(), page, search, category, sort] as const,
   details: () => [...wordKeys.all, "detail"] as const,
   detail: (id: number) => [...wordKeys.details(), id] as const,
 };
 
 // Get all words (paginated)
-export function useWords(page = 1, search = "", category = "") {
+export function useWords(page = 1, search = "", category = "", sort = "") {
   return useQuery({
-    queryKey: wordKeys.list(page, search, category),
-    queryFn: () => getWords(page, search, category),
+    queryKey: wordKeys.list(page, search, category, sort),
+    queryFn: () => getWords(page, search, category, sort),
   });
 }
 

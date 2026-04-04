@@ -12,19 +12,14 @@ import {
 } from "@/components/ui/select";
 import { CATEGORY_CONFIG, CATEGORY_SLUGS } from "@/constants/categories";
 
-type SortOption = "alpha-asc" | "alpha-desc" | "newest" | "oldest";
-
-interface FilterBarProps {
-  onSortChange?: (sort: SortOption) => void;
-}
-
-export function FilterBar({ onSortChange }: FilterBarProps) {
+export function FilterBar() {
   const t = useTranslations("Words");
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const router = useRouter();
 
   const currentCategory = searchParams.get("category") ?? "";
+  const currentSort = searchParams.get("sort") ?? "alpha-asc";
 
   const handleCategoryChange = (value: string) => {
     const params = new URLSearchParams(searchParams);
@@ -74,8 +69,13 @@ export function FilterBar({ onSortChange }: FilterBarProps) {
           <ArrowUpDown className="h-4 w-4 shrink-0 text-muted-foreground" />
           <span className="text-sm font-medium">{t("sortBy")}:</span>
           <Select
-            onValueChange={(v) => onSortChange?.(v as SortOption)}
-            defaultValue="alpha-asc"
+            value={currentSort}
+            onValueChange={(value) => {
+              const params = new URLSearchParams(searchParams);
+              params.set("sort", value);
+              params.set("page", "1");
+              router.replace(`${pathname}?${params.toString()}`);
+            }}
           >
             <SelectTrigger className="w-[160px]">
               <SelectValue />
@@ -83,8 +83,6 @@ export function FilterBar({ onSortChange }: FilterBarProps) {
             <SelectContent>
               <SelectItem value="alpha-asc">{t("sortAlphaAsc")}</SelectItem>
               <SelectItem value="alpha-desc">{t("sortAlphaDesc")}</SelectItem>
-              <SelectItem value="newest">{t("sortNewest")}</SelectItem>
-              <SelectItem value="oldest">{t("sortOldest")}</SelectItem>
             </SelectContent>
           </Select>
         </div>
