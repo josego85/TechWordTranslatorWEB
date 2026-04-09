@@ -78,7 +78,7 @@ Use React Query hooks — never fetch directly in components.
 
 ```typescript
 // src/lib/api/hooks/use-words.ts
-const { data, isLoading, error } = useWords(page, search, category);
+const { data, isLoading, error } = useWords(page, search, category, sort);
 ```
 
 Query key factory (`wordKeys`) must include every variable that changes the result:

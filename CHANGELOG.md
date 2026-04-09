@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [Unreleased]
+## [0.4.0] - 2026-04-09
 
 ### Added
 
@@ -20,6 +20,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- **CI**: Bumped GitHub Actions dependencies to latest major versions ([#5](https://github.com/josego85/TechWordTranslatorWEB/pull/5))
+  - `actions/checkout` v4 → v6
+  - `actions/setup-node` v4 → v6
+  - `actions/upload-artifact` v4 → v6
+  - `github/codeql-action` v3 → v4
 - **Docs**: `docs/api-integration.md` — `useWords` hook documenta los 4 parámetros (`page`, `search`, `category`, `sort`) y la regla de leerlos siempre desde URL params
 
 ### Fixed
