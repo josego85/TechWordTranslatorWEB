@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.4.1] - 2026-04-13
+
+### Security
+
+- **High**: Updated Next.js to 16.2.3 to fix Denial of Service vulnerability with Server Components ([GHSA-q4gf-8mx6-v5v3](https://github.com/advisories/GHSA-q4gf-8mx6-v5v3)).
+- **Moderate**: Updated next-intl to ^4.9.1 to fix open redirect vulnerability ([GHSA-8f24-v5vv-gm5j](https://github.com/advisories/GHSA-8f24-v5vv-gm5j)).
+
+---
+
 ## [0.4.0] - 2026-04-09
 
 ### Added
