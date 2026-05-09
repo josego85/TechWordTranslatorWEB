@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.4.2] - 2026-05-09
+
+### Security
+
+- **Moderate**: Updated next-intl to 4.11.1 to fix prototype pollution via `experimental.messages.precompile` ([GHSA-4c35-wcg5-mm9h](https://github.com/advisories/GHSA-4c35-wcg5-mm9h)).
+- **Low**: Updated icu-minify via `npm audit fix` to fix DoS via unsanitized prototype lookup ([GHSA-r27j-894h-3w3p](https://github.com/advisories/GHSA-r27j-894h-3w3p)).
+- **Moderate**: Forced postcss to `^8.5.10` via `overrides` to fix XSS via unescaped `</style>` in CSS Stringify output ([GHSA-qx2v-qp2m-jg93](https://github.com/advisories/GHSA-qx2v-qp2m-jg93)) — Next.js pins `postcss@8.4.31` internally; the override deduplicates to the safe root copy (`8.5.14`) without downgrading Next.js.
+
+---
+
 ## [0.4.1] - 2026-04-13
 
 ### Security
