@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.4.3] - 2026-05-16
+
+### Security
+
+- **High**: Updated Next.js to 16.2.6 to fix multiple vulnerabilities: Denial of Service with Server Components ([GHSA-8h8q-6873-q5fj](https://github.com/advisories/GHSA-8h8q-6873-q5fj)), Middleware/Proxy bypass via segment-prefetch routes ([GHSA-267c-6grr-h53f](https://github.com/advisories/GHSA-267c-6grr-h53f)), cache poisoning via React Server Component responses ([GHSA-wfc6-r584-vfw7](https://github.com/advisories/GHSA-wfc6-r584-vfw7)), and others.
+
+### Changed
+
+- Renamed `src/middleware.ts` → `src/proxy.ts` to follow Next.js 16 convention (the `middleware` file name is deprecated in favor of `proxy`).
+
+---
+
 ## [0.4.2] - 2026-05-09
 
 ### Security
