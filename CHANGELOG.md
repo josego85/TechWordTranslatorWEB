@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.4.4] - 2026-08-23
 
+### Changed
+
+- Bumped minimum required Node.js to `>=20.9.0` (required by Next.js 16.3.2); added `.nvmrc` pinning Node 20.
+- Added `AGENTS.md` to `.gitignore` — Next.js 16.3+ auto-generates/maintains this file on `next dev` for AI coding agent docs.
+
 ### Security
 
 - **High**: Updated Next.js to 16.3.2 to fix multiple vulnerabilities: Middleware/Proxy bypass in App Router applications using Turbopack and single locale ([GHSA-6gpp-xcg3-4w24](https://github.com/advisories/GHSA-6gpp-xcg3-4w24)), Denial of Service in Server Actions ([GHSA-m99w-x7hq-7vfj](https://github.com/advisories/GHSA-m99w-x7hq-7vfj)), SSRF in Server Actions on custom servers ([GHSA-89xv-2m56-2m9x](https://github.com/advisories/GHSA-89xv-2m56-2m9x)), unauthenticated disclosure of internal Server Function endpoints ([GHSA-955p-x3mx-jcvp](https://github.com/advisories/GHSA-955p-x3mx-jcvp)), and others.
@@ -16,22 +21,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **High**: Resolved nanoid infinite-loop DoS with negative/zero size via `npm audit fix` ([GHSA-28wg-ghj8-5hjv](https://github.com/advisories/GHSA-28wg-ghj8-5hjv), [GHSA-2v37-7h3g-55p8](https://github.com/advisories/GHSA-2v37-7h3g-55p8)).
 - **High**: Resolved sharp's inherited libvips vulnerabilities (CVE-2026-33327, CVE-2026-33328, CVE-2026-35590, CVE-2026-35591) via the Next.js bump.
 
-### Changed
-
-- Bumped minimum required Node.js to `>=20.9.0` (required by Next.js 16.3.2); added `.nvmrc` pinning Node 20.
-- Added `AGENTS.md` to `.gitignore` — Next.js 16.3+ auto-generates/maintains this file on `next dev` for AI coding agent docs.
-
 ---
 
 ## [0.4.3] - 2026-05-16
 
-### Security
-
-- **High**: Updated Next.js to 16.2.6 to fix multiple vulnerabilities: Denial of Service with Server Components ([GHSA-8h8q-6873-q5fj](https://github.com/advisories/GHSA-8h8q-6873-q5fj)), Middleware/Proxy bypass via segment-prefetch routes ([GHSA-267c-6grr-h53f](https://github.com/advisories/GHSA-267c-6grr-h53f)), cache poisoning via React Server Component responses ([GHSA-wfc6-r584-vfw7](https://github.com/advisories/GHSA-wfc6-r584-vfw7)), and others.
-
 ### Changed
 
 - Renamed `src/middleware.ts` → `src/proxy.ts` to follow Next.js 16 convention (the `middleware` file name is deprecated in favor of `proxy`).
+
+### Security
+
+- **High**: Updated Next.js to 16.2.6 to fix multiple vulnerabilities: Denial of Service with Server Components ([GHSA-8h8q-6873-q5fj](https://github.com/advisories/GHSA-8h8q-6873-q5fj)), Middleware/Proxy bypass via segment-prefetch routes ([GHSA-267c-6grr-h53f](https://github.com/advisories/GHSA-267c-6grr-h53f)), cache poisoning via React Server Component responses ([GHSA-wfc6-r584-vfw7](https://github.com/advisories/GHSA-wfc6-r584-vfw7)), and others.
 
 ---
 
