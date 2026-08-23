@@ -4,7 +4,7 @@
 
 | Layer | Tech |
 |---|---|
-| Framework | Next.js 16.2.0 (App Router) |
+| Framework | Next.js 16.3.2 (App Router) |
 | UI | React 19.2.0 + Tailwind CSS v4 + shadcn/ui (new-york style) |
 | State | TanStack Query v5 (server state) + next-themes (dark mode) |
 | i18n | next-intl v4 — en, es, de |
@@ -26,6 +26,7 @@ npm run pre-commit   # lint-staged (same as pre-commit hook)
 ```
 
 > No test suite in this project. Lint + build must pass before committing.
+> Requires Node.js `>=20.9.0` (Next.js 16.3+ engine requirement) — `.nvmrc` pins `20`.
 
 ---
 
