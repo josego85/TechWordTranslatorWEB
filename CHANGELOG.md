@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.4.4] - 2026-08-23
+
+### Security
+
+- **High**: Updated Next.js to 16.3.2 to fix multiple vulnerabilities: Middleware/Proxy bypass in App Router applications using Turbopack and single locale ([GHSA-6gpp-xcg3-4w24](https://github.com/advisories/GHSA-6gpp-xcg3-4w24)), Denial of Service in Server Actions ([GHSA-m99w-x7hq-7vfj](https://github.com/advisories/GHSA-m99w-x7hq-7vfj)), SSRF in Server Actions on custom servers ([GHSA-89xv-2m56-2m9x](https://github.com/advisories/GHSA-89xv-2m56-2m9x)), unauthenticated disclosure of internal Server Function endpoints ([GHSA-955p-x3mx-jcvp](https://github.com/advisories/GHSA-955p-x3mx-jcvp)), and others.
+- **High**: Forced postcss to `8.5.26` via `overrides` to fix arbitrary file read and path traversal via attacker-controlled `sourceMappingURL` in CSS comments ([GHSA-6g55-p6wh-862q](https://github.com/advisories/GHSA-6g55-p6wh-862q), [GHSA-fxqj-rqcc-2cmp](https://github.com/advisories/GHSA-fxqj-rqcc-2cmp), [GHSA-r28c-9q8g-f849](https://github.com/advisories/GHSA-r28c-9q8g-f849)) — the previous `8.5.10` pin (set in 0.4.2) had itself become vulnerable.
+- **High**: Resolved nanoid infinite-loop DoS with negative/zero size via `npm audit fix` ([GHSA-28wg-ghj8-5hjv](https://github.com/advisories/GHSA-28wg-ghj8-5hjv), [GHSA-2v37-7h3g-55p8](https://github.com/advisories/GHSA-2v37-7h3g-55p8)).
+- **High**: Resolved sharp's inherited libvips vulnerabilities (CVE-2026-33327, CVE-2026-33328, CVE-2026-35590, CVE-2026-35591) via the Next.js bump.
+
+### Changed
+
+- Bumped minimum required Node.js to `>=20.9.0` (required by Next.js 16.3.2); added `.nvmrc` pinning Node 20.
+- Added `AGENTS.md` to `.gitignore` — Next.js 16.3+ auto-generates/maintains this file on `next dev` for AI coding agent docs.
+
+---
+
 ## [0.4.3] - 2026-05-16
 
 ### Security
